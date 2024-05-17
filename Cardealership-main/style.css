@@ -1,0 +1,347 @@
+
+/*Unique Project Style*/
+
+/*Body/////////////////////////////////////////////////////////////////////////////////////////*/
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    background-color: #435165;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*Log IN FILE//////////////////////////////////////////////////////////////////////////////////////*/
+.login {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+}
+.login h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #36373a;
+    color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"], .login form input[type="email"]{
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.login form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+   margin-top: 20px;
+    background-color: #323438;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+  background-color: #1d2024;
+    transition: background-color 0.2s;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*Forms////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#signup {
+    background-color: #ffffff;
+    padding: 3px;
+    border: 3px solid #000000;
+    width: 800px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Style the label for each input */
+  label {
+    display: block;
+    text-align: left;
+    padding: 3px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #2f3947;
+    color: white;
+    padding: 16px 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 1
+  }
+  
+  .cssform {
+    background-color: #f1f1f1;
+    padding: 5px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*////////////////////////////////////////////////*/
+
+
+/*Buttons/////////////////////////////////////////*/
+.buttonrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.button {
+    background-color: #2f3947;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0px auto;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-table;
+    text-decoration: none;
+    cursor: pointer;
+    width: 500px;
+    height: 150px;
+    display: block;
+    border-radius: 4px;
+}
+  
+.button:hover {
+    opacity: 1
+}
+
+.sell-button {
+  background-image: url( 'sell.png' );
+  width : 45px;
+  height : 45px;
+  border-style: none;
+  background-repeat: no-repeat;
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/*Content Section///////////////////////////////////////////////////////////////*/
+body.loggedin {
+	background-color: #f3f4f7;
+}
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+.content h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
+.content > p, .content > div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+}
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Navegation section/////////////////////////////////////////////////////////////////////////////////*/
+
+nav { 
+    /* ADD scrolling nav bar feature */
+    position: fixed;
+    top: 0;
+    background-color: #2f3947;
+    width: 100%;
+    height: 90px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 5px;
+    border-style: none;
+    margin-left: -10px;
+}
+
+#navbox {
+    width: 100%;
+  }
+
+
+  #menu {
+    position: relative;
+
+  }
+
+  #menu, #menu ul {
+    list-style: none;
+  }
+
+  #menu > li {
+    float: left;
+    position: relative;
+    border-right: 1px solid rgba(0,0,0,.1);
+    box-shadow: 1px 0 0 rgba(255,255,255,.25);
+    perspective: 1000px;
+    
+  }
+
+  #menu > li:first-child {
+    border-left: 1px solid rgba(133, 43, 43, 0.25);
+    box-shadow: -1px 0 0 rgba(0,0,0,.1), 1px 0 0 rgba(255,255,255,.25);
+  }
+
+  #menu a {
+    display: block;
+    z-index: 10;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    color: rgba(75,75,75,1);
+    line-height: 1;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -.05em;
+    background: transparent;    
+    transition: all .25s ease-in-out;
+  
+  }
+
+  #menu > li:hover > a {
+    background: #333;
+    color: rgba(0,223,252,1);
+    text-shadow: none;
+  }
+
+  #menu li ul  {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: transparent;
+    overflow: hidden;
+    transform-origin: 50% 0%;
+  }
+
+
+  #menu li:hover ul {
+    
+    padding: 15px 0;
+    background: #333;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 1px 1px 7px rgba(0,0,0,.5);
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+
+  }
+
+
+
+  #menu li li a {
+    padding-left: 15px;
+    font-weight: 400;
+    color: #ddd;
+    text-shadow: none;
+    border-top: dotted 1px transparent;
+    border-bottom: dotted 1px transparent;
+    transition: all .15s linear;
+  }
+
+  #menu li li a:hover {
+    color: rgba(0,223,252,1);
+    border-top: dotted 1px rgba(255,255,255,.15);
+    border-bottom: dotted 1px rgba(255,255,255,.15);
+    background: rgba(0,223,252,.02);
+  }
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*TABLES//////////////////////////////////////////////////////////////////////////*/
+table {
+    background: #34495E;
+    color: #fff;
+    border-radius: .4em;
+    overflow: hidden;
+    text-align: left;
+
+    
+}
+
+
+table th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+}
+  
+table th, td:before {
+    color: rgb(248, 248, 237);
+}
+
+table tr {
+    border-color: lighten(#34495E, 10%);
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
